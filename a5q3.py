@@ -18,3 +18,6 @@ def ordered(tnode):
 
         if upper_bound is not None and node.data >= upper_bound:
             return False
+
+        left_ordered = is_ordered(node.left, lower_bound, node.data)
+        right_ordered = is_ordered(node.right, node.data, upper_bound)
