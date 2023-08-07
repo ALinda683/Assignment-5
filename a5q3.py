@@ -23,3 +23,5 @@ def ordered(tnode):
         right_ordered = is_ordered(node.right, node.data, upper_bound)
 
         return left_ordered and right_ordered
+
+    return is_ordered(tnode, None, None)
